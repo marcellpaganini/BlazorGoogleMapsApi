@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Components.Web;
 using MapPractice.Data;
 
 var builder = WebApplication.CreateBuilder(args);
+var googleMapsApiKey = builder.Configuration["GoogleMaps:ApiKey"];
 
 // Add services to the container.
 builder.Services.AddRazorPages();

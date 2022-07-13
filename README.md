@@ -18,6 +18,14 @@
   ```bash
   dotnet new razorcomponent -n ComponentName
   ``` 
+  * Enable Secret Storage
+  ```bash
+  dotnet user-secrets init
+  ```
+  * Enable Secret Storage
+  ```bash
+   dotnet user-secrets set "GoogleMaps:ApiKey" "APIKEY" --project "C:\directory\ProjectFile"
+  ```
 
 ### Programming Topics practiced to get things done  
 #### Event Handling (Blazor)  

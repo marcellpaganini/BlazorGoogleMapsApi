@@ -26,7 +26,13 @@
         <a href="" class="reload">Reload</a>
         <a class="dismiss">🗙</a>
     </div>
-
+    
     <script src="_framework/blazor.server.js"></script>
+    <script src="~/Script.js"></script>
+    <script async defer src=$"https://maps.googleapis.com/maps/api/js?key={@Shared.ApiKey.GetKey()}"></script>
 </body>
 </html>
+
+@{
+    string key = ApiKey.GetKey();
+}
